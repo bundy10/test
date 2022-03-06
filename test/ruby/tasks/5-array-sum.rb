@@ -6,7 +6,7 @@
  # @returns {Number} The sum of all integers contained in the input, at any level.
 #
 def array_sum(start_of_tree)
-  simplified = start_of_tree.flatten.grep(Integer)
+  simplified = start_of_tree.flatten.grep(Integer) # extracting all elements from nested arrays into new array, filtering array to only integers
   simplified.inject(0, :+)
 end
 

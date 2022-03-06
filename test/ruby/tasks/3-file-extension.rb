@@ -6,5 +6,9 @@
  # @returns {String} The file extension (with no period), or false if there is none.
 #
 def get_file_extension(filename)
-
+  if filename.include?(".")
+    filename.split(".")[-1]
+  else
+    false
+  end
 end

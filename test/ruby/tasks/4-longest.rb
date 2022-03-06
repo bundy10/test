@@ -6,5 +6,6 @@
  # @returns {String} The longest string from within the input array.
 #
 def longest_string(strings)
-
+  simplified = strings.grep(String) # filtering array to only strings
+  simplified.max_by(&:length)
 end
